@@ -1,9 +1,9 @@
 @echo off
 title Fastfing
-echo ÆÐ½ºÆ®ÇÎÀ» ¼³Á¤ ÇÏ½Ã°Ú½À´Ï±î?
-echo ÁÖÀÇ:·£Ä«µå ¾ÆÀÌµð¸¦ È®ÀÎÇÒ °Í, °ü¸®ÀÚ ±ÇÇÑÀ¸·Î ½ÇÇàÇÒ °Í
+echo íŒ¨ìŠ¤íŠ¸í•‘ì„ ì„¤ì • í•˜ì‹œê² ìŠµë‹ˆê¹Œ?
+echo ì£¼ì˜:ëžœì¹´ë“œ ì•„ì´ë””ë¥¼ í™•ì¸í•  ê²ƒ, ê´€ë¦¬ìž ê¶Œí•œìœ¼ë¡œ ì‹¤í–‰í•  ê²ƒ
 echo.
-set /p a=(¼³Á¤:Y/¼³Á¤ º¹±¸:N)
+set /p a=(ì„¤ì •:Y/ì„¤ì • ë³µêµ¬:N)
 if %a%==y goto excution
 if %a%==n goto restore
 
@@ -15,7 +15,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{eb8
 goto explain
 
 :explain
-msg %username% ÀçºÎÆÃÇÏ°Å³ª ·»Ä«µå µå¶óÀÌ¹ö¸¦ ÀçºÎÆÃÇÑ ÀÌÈÄºÎÅÍ Àû¿ëµË´Ï´Ù.
+msg %username% ìž¬ë¶€íŒ…í•˜ê±°ë‚˜ ë Œì¹´ë“œ ë“œë¼ì´ë²„ë¥¼ ìž¬ë¶€íŒ…í•œ ì´í›„ë¶€í„° ì ìš©ë©ë‹ˆë‹¤.(Win + X, ìž¥ì¹˜ ê´€ë¦¬ìž)
 goto exit
 
 :restore
